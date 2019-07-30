@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Church of the Trees`,
+    description: `Trees give us life`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -14,6 +14,10 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-plugin-typography",
+      options: { pathToConfigModule: "src/utils/typography.js" },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
